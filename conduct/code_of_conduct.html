@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -76,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -132,6 +142,7 @@ const thebe_selector_output = ".output, .cell_output"
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -301,10 +312,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -312,7 +323,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -382,11 +393,7 @@ resolve a misunderstanding and de-escalate things.</p>
 work, there is urgency or risk to someone, nobody is intervening publicly and
 you don’t feel comfortable speaking in public, etc.  For these or other
 reasons, structured follow-up may be necessary and here we provide the means
-for that: we welcome reports by emailing
-<a class="reference external" href="mailto:conduct&#37;&#52;&#48;jupyter&#46;org"><em>conduct<span>&#64;</span>jupyter<span>&#46;</span>org</em></a> or by filling out <a class="reference external" href="https://forms.gle/gRMQc9G4hejqoqgC8">this
-form</a>. For more details please see our
-Reporting Guidelines (for <a class="reference internal" href="reporting_online.html"><span class="doc std std-doc">online</span></a> and
-<a class="reference internal" href="reporting_events.html"><span class="doc std std-doc">in-person</span></a> contexts).</p>
+for that as described in the <span class="xref myst">Reporting</span> section.</p>
 <p>This code applies equally to founders, developers, mentors and new community
 members, in all spaces managed by Project Jupyter (including IPython). This
 includes the mailing lists, our GitHub organizations, our chat rooms, in-person
@@ -468,7 +475,7 @@ or other local personnel that are present.</p>
 <p>In situations where an individual community member acts unilaterally,
 they must inform the Code of Conduct committee as soon as possible,
 by e-mailing
-<a class="reference external" href="mailto:conduct&#37;&#52;&#48;jupyter&#46;org"><em>conduct<span>&#64;</span>jupyter<span>&#46;</span>org</em></a><em>reporting_online</em>)
+<a class="reference external" href="mailto:conduct&#37;&#52;&#48;jupyter&#46;org"><em>conduct<span>&#64;</span>jupyter<span>&#46;</span>org</em></a>
 within 24 hours.</p>
 </section>
 <section id="reporting">
@@ -480,7 +487,8 @@ for everyone and we take them seriously.</p>
 <a class="reference external" href="mailto:conduct&#37;&#52;&#48;jupyter&#46;org"><em>conduct<span>&#64;</span>jupyter<span>&#46;</span>org</em></a> or by filling out
 <a class="reference external" href="https://forms.gle/gRMQc9G4hejqoqgC8">this form</a>. For more details or
 information on reporting in-person at an event, please see our Reporting
-Guidelines.</p>
+Guidelines (for <a class="reference internal" href="reporting_online.html"><span class="doc std std-doc">online</span></a> and
+<a class="reference internal" href="reporting_events.html"><span class="doc std std-doc">in-person</span></a> contexts).</p>
 <p>The online form gives you the option to keep your report anonymous or request
 that we follow up with you directly. While we cannot follow up on an anonymous
 report, we will take appropriate action.</p>
@@ -525,11 +533,10 @@ Attribution</em></a> license.</p>
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../people.html"
@@ -549,10 +556,7 @@ Attribution</em></a> license.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -631,8 +635,8 @@ This work is published from:
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
 
   <footer class="bd-footer">
   </footer>
